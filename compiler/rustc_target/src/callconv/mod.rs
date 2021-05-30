@@ -20,6 +20,7 @@ mod loongarch;
 mod m68k;
 mod mips;
 mod mips64;
+mod mos;
 mod msp430;
 mod nvptx64;
 mod powerpc;
@@ -683,7 +684,8 @@ impl<'a, Ty> FnAbi<'a, Ty> {
             "csky" => csky::compute_abi_info(self),
             "mips" | "mips32r6" => mips::compute_abi_info(cx, self),
             "mips64" | "mips64r6" => mips64::compute_abi_info(cx, self),
-            "powerpc" => powerpc::compute_abi_info(cx, self),
+            "mos" => mos::compute_abi_info(self),
+            "powerpc" => powerpc::compute_abi_info(self),
             "powerpc64" => powerpc64::compute_abi_info(cx, self),
             "s390x" => s390x::compute_abi_info(cx, self),
             "msp430" => msp430::compute_abi_info(self),
