@@ -12,15 +12,15 @@ on:
         type: string
       llvm_mos_ref:
         description: 'llvm-mos ref'
-        default: '8935d0b23f66086a0638dd7ade680398477cd782'
+        default: '6a9faaeefa10bdc5970eda89d61ff123c63099fd'
         type: string
       llvm_mos_sdk_ref:
         description: 'llvm-mos-sdk ref'
-        default: '6d4994fbcb21c7e02053b360cff7eb60bf7be1ab'
+        default: '2257f41bf0c151742a2ef3e131c1afcfc55f0fd5'
         type: string
       rust_mos_sha:
         description: 'rust_mos_sha (last part of image name)'
-        default: '21ee0734'
+        # default: '21ee0734'
         type: string
 jobs:
   amd64_image:
