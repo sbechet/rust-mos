@@ -685,7 +685,7 @@ impl<'a, Ty> FnAbi<'a, Ty> {
             "mips" | "mips32r6" => mips::compute_abi_info(cx, self),
             "mips64" | "mips64r6" => mips64::compute_abi_info(cx, self),
             "mos" => mos::compute_abi_info(self),
-            "powerpc" => powerpc::compute_abi_info(self),
+            "powerpc" => powerpc::compute_abi_info(cx, self),
             "powerpc64" => powerpc64::compute_abi_info(cx, self),
             "s390x" => s390x::compute_abi_info(cx, self),
             "msp430" => msp430::compute_abi_info(self),
